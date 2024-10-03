@@ -1,0 +1,734 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.source-sans-3 source-sans {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+.clear-fix {
+  clear: both;
+}
+
+/*----------------Header for each section---------------*/
+
+#feedback .feedback-container .feedback-header,
+#our-portfolio .portfolio-header,
+#our-services .service-header,
+#our-blog .blog-container .blog-header {
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#our-services .service-header h2,
+#our-portfolio .portfolio-header h2,
+#feedback .feedback-container .feedback-header h2,
+#our-blog .blog-container .blog-header h2 {
+  color: #333333;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+#our-services .service-header h2::before,
+#our-portfolio .portfolio-header h2::before,
+#feedback .feedback-container .feedback-header h2::before,
+#our-blog .blog-container .blog-header h2::before {
+  content: "";
+  width: 5%;
+  height: 1%;
+  border-top: 1px solid #ff305b;
+  padding: 5px;
+  border-bottom: 1px solid #ff305b;
+  position: absolute;
+  top: 92%;
+  left: 48%;
+}
+#our-services .service-header h2::after,
+#our-portfolio .portfolio-header h2::after,
+#feedback .feedback-container .feedback-header h2::after,
+#our-blog .blog-container .blog-header h2::after {
+  content: "";
+  width: 10%;
+  height: 1%;
+  position: absolute;
+  top: 99%;
+  left: 45%;
+  background-color: #ff305b;
+}
+
+/*------------------------Start of Home----------------------------------*/
+.home-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/slider-02.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.home-container::before {
+  content: "";
+  background-color: black;
+  opacity: 0.8;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+/*--------------Navbar----------------*/
+
+.home-container .nav-links {
+  position: absolute;
+  top: 1%;
+  right: 7%;
+  float: right;
+}
+
+.home-container .nav .nav-links ul {
+  display: inline;
+  list-style: none;
+}
+.home-container .nav .nav-links ul li {
+  padding: 15px;
+  float: left;
+}
+.home-container .nav .nav-links ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+.home-container .nav .nav-links ul li a.active {
+  color: rgb(255, 48, 91);
+}
+.home-container .nav .nav-links ul li a:hover {
+  color: rgb(255, 48, 91);
+}
+.home-container .nav .nav-logo span a {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(255, 48, 91);
+  display: inline-block;
+  top: 1%;
+  left: 10%;
+  position: absolute;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*--------------Content----------------*/
+.home-container .home-content {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.home-container .home-content h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgb(255, 48, 91);
+}
+
+.home-container .home-content .hello-paragraph {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.home-container .home-content .professional-paragraph {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+/*------------------------End of Header----------------------------------*/
+
+/*------------------------Start of About----------------------------------*/
+.profile-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.profile {
+  float: left;
+}
+
+.profile-container .profile-about {
+  width: 30%;
+  margin: 2rem 4rem 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-container .profile-about::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 8px solid rgb(85, 85, 85);
+  border-radius: 0.7rem;
+}
+.profile-container .profile-about .profile-image {
+  width: 100%;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-container .profile-about .profile-image img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+.profile-container ul li {
+  display: inline;
+  list-style: none;
+}
+
+.profile-container .profile-about .profile-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(85, 85, 85);
+  opacity: 0.8;
+  color: white;
+  position: absolute;
+  border-radius: 0.7rem;
+  top: 100%;
+  transition: 0.3s all ease;
+}
+
+.profile-image:hover .profile-overlay {
+  border-radius: 0.7rem;
+  top: 0;
+}
+
+.profile-container .profile-overlay ul li {
+  margin: 10px;
+}
+.profile-container .profile-overlay .social-icons {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile-overlay .social-icons i {
+  color: white;
+}
+.profile-overlay .social-icons i:hover {
+  color: rgb(255, 48, 91);
+}
+
+/*=================profile description======================*/
+.profile-container .profile-description {
+  width: 45%;
+  margin: 2rem 0rem 2rem 4rem;
+}
+
+.profile-container .profile-description h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+  padding-bottom: 0.5rem;
+  padding-left: 0.8rem;
+  position: relative;
+}
+
+.profile-container .profile-description h2::before {
+  content: "";
+  width: 0.6%;
+  height: 40%;
+  left: 0%;
+  top: 20%;
+  position: absolute;
+  background-color: rgb(255, 48, 91);
+}
+
+.profile-container .profile-description p {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  padding-bottom: 1.2rem;
+  position: relative;
+}
+
+.profile-container .profile-description p:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  border: 0.1px dashed rgba(85, 85, 85, 0.5);
+}
+
+.profile-container .profile-description span {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #232323;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.profile-container .profile-description ul {
+  margin-top: 1.1rem;
+  /* background-color: tomato; */
+}
+.profile-container .profile-description ul li {
+  width: 50%;
+  padding-bottom: 1rem;
+  color: #555555;
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-family: "Source Sans 3", sans-serif;
+  float: left;
+}
+.profile-container .profile-description .buttons {
+  margin-top: 0.8rem;
+}
+.profile-container .profile-description .buttons a {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background-color: rgb(255, 48, 91);
+  color: white;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-align: center;
+}
+.profile-container .profile-description .buttons > a i {
+  margin-left: 0.25rem;
+  color: white;
+}
+.profile-container .profile-description .buttons a:hover {
+  cursor: pointer;
+  background-color: rgb(236, 36, 3);
+}
+
+.profile-container .profile-description .buttons .download-cv-btn {
+  margin-right: 0.5rem;
+}
+
+/*------------------------End of About----------------------------------*/
+
+/*------------------------Start of Services----------------------------------*/
+
+.service-container {
+  background-color: #f1f1f1;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* =====service items=======*/
+
+#our-services .service-items {
+  margin-left: 2rem;
+  margin: auto;
+  width: 90%;
+}
+#our-services .service-items .item {
+  float: left;
+  width: 23%;
+  margin-left: 1.2rem;
+}
+#our-services .service-items .item .item-inner {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#our-services .service-items .item .item-inner:hover {
+  background-color: white;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.item-inner:hover i {
+  transform: scale(1.3, 1.3);
+}
+
+#our-services .service-items .item .item-inner i {
+  color: #ff305b;
+  padding: 1rem 0rem;
+  font-size: 1.6rem;
+  transition: 0.5s all ease-in-out;
+}
+
+#our-services .service-items .item .item-inner h3 {
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Source Sans 3", sans-serif;
+  padding-bottom: 0.8rem;
+}
+
+#our-services .service-items .item .item-inner p {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  color: #555555;
+  font-size: 0.8rem;
+}
+
+/*------------------------End of Services----------------------------------*/
+
+/*------------------------Start of Portfolio----------------------------------*/
+
+#our-portfolio {
+  margin-bottom: 3rem;
+}
+
+/*=========portfolio categories=======*/
+#our-portfolio .portfolio-categories {
+  width: 28%;
+  margin: 1rem auto;
+}
+
+#our-portfolio .portfolio-categories ul li {
+  float: left;
+  list-style: none;
+  color: #333333;
+  padding: 0.2rem 0.4rem;
+  margin-top: 0.5rem;
+  margin-left: 0.4rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+#our-portfolio .portfolio-categories .active {
+  color: #ff305b;
+}
+
+/*==============portfolio cards=============*/
+
+#our-portfolio .portfolio-cards {
+  width: 80%;
+  margin: auto;
+}
+
+#our-portfolio .portfolio-cards .card {
+  float: left;
+  width: 29%;
+  margin: 1rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+#our-portfolio .portfolio-cards .layer {
+  width: 100%;
+  height: 99%;
+  background-color: rgba(85, 85, 85);
+  position: absolute;
+  top: 0%;
+  opacity: 0;
+  transition: 1s;
+}
+#our-portfolio .portfolio-cards .layer .icon i {
+  position: absolute;
+  color: #ff305b;
+  top: 85%;
+  right: 5%;
+  font-size: 1rem;
+}
+
+#our-portfolio .portfolio-cards .card:hover .layer {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#our-portfolio .card img {
+  width: 100%;
+}
+/*------------------------End of Portfolio----------------------------------*/
+
+/*------------------------Start of Achievement----------------------------------*/
+#our-achievement {
+  background-color: #f1f1f1;
+  margin-bottom: 2.5rem;
+}
+#our-achievement .achievement-container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
+#our-achievement .achievement-container .item {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+#our-achievement .achievement-container .item .logo i {
+  color: #ff305b;
+  margin: 0.2rem 0.5rem;
+  font-size: 1.3rem;
+}
+
+#our-achievement .achievement-container .item span {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #232323;
+  font-family: "Source Sans 3", sans-serif;
+}
+#our-achievement .achievement-container .item p {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  font-size: 0.8rem;
+}
+
+/*------------------------End of Achievement----------------------------------*/
+
+/*------------------------Start of Feedback----------------------------------*/
+#feedback {
+  padding: 2.5rem 0.5rem;
+}
+
+/*=========feedback content=======*/
+
+#feedback .feedback-container .feedback-content {
+  background-color: #f1f1f1;
+  width: 50%;
+  margin: auto;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+#feedback .feedback-container .feedback-content::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  border-width: 200px;
+  transform: rotate(45deg);
+  background-color: #ff305b;
+  position: absolute;
+  top: -67%;
+  left: -27.5%;
+}
+/*=========feedback content--->  image=======*/
+
+#feedback .feedback-container .feedback-content .feedback-image {
+  float: left;
+  width: 20%;
+  padding: 0.8rem;
+  margin: 1rem 0rem;
+  text-align: center;
+  position: relative;
+}
+
+#feedback .feedback-container .feedback-content .feedback-image img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+/*=========feedback content--->  details=======*/
+
+#feedback .feedback-container .feedback-content .feedback-details {
+  width: 80%;
+  padding: 1rem 1.5rem 1.5rem 0rem;
+  float: right;
+}
+
+#feedback .feedback-container .feedback-content .feedback-details h3 {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: "Source Sans 3", sans-serif;
+}
+#feedback .feedback-container .feedback-content .feedback-details h4,
+i {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  color: rgb(119, 119, 119);
+  font-size: 0.8rem;
+  padding: 0.2rem 0rem;
+}
+
+#feedback .feedback-container .feedback-content .feedback-details p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0rem 1rem 0.4rem 0.1rem;
+  line-height: 1.2rem;
+}
+
+#feedback .feedback-container .feedback-content .feedback-details .rating i {
+  color: rgb(241, 195, 13);
+  font-size: 0.7rem;
+}
+/*------------------------End of Feedback----------------------------------*/
+
+/*------------------------Start of Blog----------------------------------*/
+#our-blog {
+  background-color: #f1f1f1;
+  padding: 5rem 2rem;
+  margin-top: 6rem;
+}
+#our-blog .blog-container {
+  margin: auto;
+  width: 80%;
+}
+/*============Blog content-====================*/
+
+#our-blog .blog-container .blog-content .blog-item {
+  background-color: white;
+  float: left;
+  width: 30%;
+  margin-left: 1.4rem;
+}
+/*============Blog content-> image====================*/
+#our-blog .blog-container .blog-content .blog-item .blog-image iframe {
+  width: 100%;
+  height: 194px;
+}
+#our-blog .blog-container .blog-content .blog-item .blog-image img {
+  width: 100%;
+}
+/*============Blog content-> details====================*/
+#our-blog .blog-container .blog-content .blog-item .blog-details {
+  background-color: #ffffff;
+  padding: 1rem 0.6rem;
+}
+#our-blog .blog-container .blog-content .blog-item .blog-details span {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: rgb(85, 85, 85);
+  font-family: "Roboto", sans-serif;
+}
+
+#our-blog .blog-container .blog-content .blog-item .blog-details h3 {
+  margin: 0.3rem 0rem;
+}
+
+#our-blog .blog-container .blog-content .blog-item .blog-details h3 a {
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "Source Sans 3", sans-serif;
+  padding-bottom: 0.8rem;
+  text-decoration: none;
+  transition: 0.3s all ease 0s;
+}
+
+#our-blog .blog-container .blog-content .blog-item .blog-details h3 a:hover {
+  color: #ff305b;
+}
+
+#our-blog .blog-container .blog-content .blog-item .blog-details p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+#our-blog .blog-container .blog-content .blog-item .blog-details .read-link {
+  margin-top: 1rem;
+}
+#our-blog .blog-container .blog-content .blog-item .blog-details .read-link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: #333333;
+  transition: 0.3s all ease 0s;
+}
+#our-blog
+  .blog-container
+  .blog-content
+  .blog-item
+  .blog-details
+  .read-link
+  a
+  i {
+  color: inherit;
+}
+
+#our-blog
+  .blog-container
+  .blog-content
+  .blog-item
+  .blog-details
+  .read-link
+  a:hover {
+  color: #ff305b;
+}
+/*------------------------End of Blog----------------------------------*/
+
+/*------------------------Start of footer----------------------------------*/
+
+#footer {
+  background-color: aqua;
+  margin-top: 4rem;
+}
+
+#footer .footer-container {
+  background-color: #333333;
+  padding: 3rem 1rem;
+}
+
+#footer .footer-container .social-icons ul {
+  display: inline;
+  list-style: none;
+  background-color: green;
+}
+#footer .footer-container .social-icons ul li {
+  float: left;
+  margin-left: 1rem;
+}
+
+#footer .footer-container .social-icons {
+  color: white;
+  width: 10%;
+  padding: 0.1rem;
+  margin: auto;
+}
+#footer .footer-container .social-icons i {
+  color: white;
+  font-size: 0.8rem;
+}
+#footer .footer-container .social-icons i:hover {
+  color: rgb(255, 48, 91);
+}
+#footer .footer-container p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+#footer .footer-container p a {
+  text-decoration: none;
+  color: #ff305b;
+}
+#footer .footer-container p a:hover {
+  text-decoration: underline;
+}
+/*------------------------End of footer----------------------------------*/

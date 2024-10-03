@@ -1,0 +1,527 @@
+/*TODO ------------------- Extra large screen-----------------------*/
+
+@media screen and (max-width: 1450px) {
+  #our-services .service-header h2::before,
+  #our-portfolio .portfolio-header h2::before,
+  #feedback .feedback-container .feedback-header h2::before,
+  #our-blog .blog-container .blog-header h2::before {
+    width: 5%;
+    left: 48%;
+  }
+  #our-services .service-header h2::after,
+  #our-portfolio .portfolio-header h2::after,
+  #feedback .feedback-container .feedback-header h2::after,
+  #our-blog .blog-container .blog-header h2::after {
+    width: 14%;
+    left: 43%;
+  }
+
+  /*------------ Services-------------------*/
+  #our-services .service-items {
+    width: 100%;
+  }
+  #our-services .service-items .item {
+    float: left;
+    width: 40%;
+  }
+  /*-----------------------portfolio---------------------*/
+  /*=========portfolio cards=======*/
+  #our-portfolio .portfolio-cards {
+    margin: auto;
+    width: 80%;
+  }
+
+  #our-portfolio .portfolio-cards .card {
+    width: 29%;
+    margin: 1rem 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  /*=========portfolio categories=======*/
+
+  #our-portfolio .portfolio-categories {
+    width: 35%;
+    margin: auto;
+  }
+  #our-portfolio .portfolio-categories ul li {
+    padding: 0.2rem 0.4rem;
+  }
+
+  /*=========feedback content=======*/
+  #feedback .feedback-container .feedback-content {
+    width: 60%;
+  }
+  #feedback .feedback-container .feedback-content::before {
+    transform: rotate(50deg);
+    top: -80%;
+    left: -20%;
+  }
+  /*=========feedback content--->  image=======*/
+  #feedback .feedback-container .feedback-content .feedback-image {
+    width: 25%;
+  }
+  /*=========feedback content--->  details=======*/
+  #feedback .feedback-container .feedback-content .feedback-details {
+    width: 75%;
+  }
+  /*------------------ footer -------------------*/
+  #footer .footer-container .social-icons {
+    width: 13%;
+  }
+}
+
+/*TODO ------------------- large screen-----------------------*/
+
+@media screen and (max-width: 1200px) {
+  #our-services .service-header h2::before,
+  #our-portfolio .portfolio-header h2::before,
+  #feedback .feedback-container .feedback-header h2::before,
+  #our-blog .blog-container .blog-header h2::before {
+    width: 6%;
+    left: 47%;
+  }
+  #our-services .service-header h2::after,
+  #our-portfolio .portfolio-header h2::after,
+  #feedback .feedback-container .feedback-header h2::after,
+  #our-blog .blog-container .blog-header h2::after {
+    width: 14%;
+    left: 43%;
+  }
+
+  /*-----------------------portfolio---------------------*/
+  /*=========portfolio categories=======*/
+
+  #our-portfolio .portfolio-categories {
+    width: 50%;
+    margin: auto;
+  }
+  #our-portfolio .portfolio-categories ul li {
+    padding: 0.2rem 0.4rem;
+  }
+
+  /*=========portfolio cards=======*/
+  #our-portfolio .portfolio-cards {
+    margin: auto;
+    width: 80%;
+  }
+
+  #our-portfolio .portfolio-cards .card {
+    width: 28%;
+    margin: 1rem 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  /*=========feedback content=======*/
+  #feedback .feedback-container .feedback-content {
+    width: 70%;
+  }
+  #feedback .feedback-container .feedback-content::before {
+    transform: rotate(50deg);
+    top: -80%;
+    left: -20%;
+  }
+  /*=========feedback content--->  image=======*/
+  #feedback .feedback-container .feedback-content .feedback-image {
+    width: 25%;
+  }
+  /*=========feedback content--->  details=======*/
+  #feedback .feedback-container .feedback-content .feedback-details {
+    width: 75%;
+  }
+
+  /*-----------------------Blog---------------------*/
+  #our-blog {
+    background-color: #f1f1f1;
+    padding: 0rem 0rem;
+    margin-top: 2rem;
+  }
+  #our-blog .blog-container {
+    margin: auto;
+    width: 100%;
+  }
+
+  #our-blog .blog-container .blog-content .blog-item {
+    width: 31%;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
+  #our-blog .blog-container .blog-content .blog-item .blog-image iframe {
+    height: 190px;
+  }
+
+  /*------------------ footer -------------------*/
+  #footer .footer-container .social-icons {
+    width: 16%;
+  }
+}
+
+/*TODO ------------------- Medium screen-----------------------*/
+
+@media screen and (max-width: 992px) {
+  #our-services .service-header h2::before,
+  #our-portfolio .portfolio-header h2::before,
+  #feedback .feedback-container .feedback-header h2::before,
+  #our-blog .blog-container .blog-header h2::before {
+    width: 6%;
+    left: 47%;
+  }
+  #our-services .service-header h2::after,
+  #our-portfolio .portfolio-header h2::after,
+  #feedback .feedback-container .feedback-header h2::after,
+  #our-blog .blog-container .blog-header h2::after {
+    width: 17%;
+    left: 41%;
+  }
+  /*-----------------Header---------------*/
+  .home-container .nav-links {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+  .home-container .nav .nav-links ul {
+    display: list-item;
+  }
+  .home-container .nav .nav-links ul li {
+    padding: 6px;
+    float: left;
+  }
+  .home-container .nav-links {
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    float: right;
+  }
+  .home-container .nav .nav-logo {
+    color: rgb(255, 48, 91);
+    display: inline-block;
+    top: 1%;
+    left: 2%;
+    position: absolute;
+  }
+  /*-----------------Profile---------------*/
+
+  .profile-container .profile-about {
+    width: 80%;
+    margin: 2rem 2rem 4rem;
+    position: relative;
+    z-index: 1;
+  }
+  .profile-container .profile-description {
+    width: 80%;
+  }
+  /*-----------------------Services---------------------*/
+  .service-container {
+    padding: 0rem 0rem;
+  }
+  .service-container {
+    padding: 1rem 1rem;
+  }
+  #our-services .service-items {
+    width: 90%;
+    margin: auto;
+  }
+  #our-services .service-items .item {
+    float: left;
+    width: 95%;
+  }
+  #our-services .service-items .item .item-inner {
+    padding: 1rem 1rem;
+  }
+
+  /*-----------------------portfolio---------------------*/
+  /*=========portfolio categories=======*/
+
+  #our-portfolio .portfolio-categories {
+    width: 53%;
+  }
+  #our-portfolio .portfolio-categories ul li {
+    padding: 0.2rem 0.3rem;
+  }
+
+  /*=========portfolio cards=======*/
+  #our-portfolio .portfolio-cards {
+    margin: auto;
+    width: 90%;
+  }
+
+  #our-portfolio .portfolio-cards .card {
+    width: 44%;
+    margin: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #our-achievement .achievement-container .item {
+    width: 50%;
+    padding: 2rem 0rem;
+  }
+
+  /*=========feedback content=======*/
+  #feedback .feedback-container .feedback-content {
+    width: 90%;
+  }
+  #feedback .feedback-container .feedback-content::before {
+    transform: rotate(50deg);
+    top: -80%;
+    left: -19%;
+  }
+  /*=========feedback content--->  image=======*/
+  #feedback .feedback-container .feedback-content .feedback-image {
+    width: 25%;
+  }
+  /*=========feedback content--->  details=======*/
+  #feedback .feedback-container .feedback-content .feedback-details {
+    width: 75%;
+  }
+
+  /*-----------------------Blog---------------------*/
+  #our-blog {
+    background-color: #f1f1f1;
+    padding: 0rem 0rem;
+    margin-top: 2rem;
+  }
+  #our-blog .blog-container {
+    margin: auto;
+    width: 100%;
+  }
+
+  #our-blog .blog-container .blog-content .blog-item {
+    background-color: #f1f1f1;
+    width: 31%;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
+  #our-blog .blog-container .blog-content .blog-item .blog-image iframe {
+    height: 140px;
+  }
+
+  /*------------------ footer -------------------*/
+  #footer .footer-container .social-icons {
+    width: 22%;
+  }
+}
+
+/*TODO ------------------- Small screen-----------------------*/
+
+@media screen and (max-width: 768px) {
+  #our-services .service-header h2::before,
+  #our-portfolio .portfolio-header h2::before,
+  #feedback .feedback-container .feedback-header h2::before,
+  #our-blog .blog-container .blog-header h2::before {
+    width: 9%;
+    left: 45%;
+  }
+  #our-services .service-header h2::after,
+  #our-portfolio .portfolio-header h2::after,
+  #feedback .feedback-container .feedback-header h2::after,
+  #our-blog .blog-container .blog-header h2::after {
+    width: 22%;
+    left: 39%;
+  }
+
+  /*-----------------Header---------------*/
+
+  .home-container .nav-links {
+    position: relative;
+    top: 0%;
+    right: 0%;
+  }
+  .home-container .nav .nav-links ul {
+    display: list-item;
+  }
+  .home-container .nav .nav-links ul li {
+    padding: 7px;
+    float: left;
+  }
+  .home-container .nav-links {
+    position: absolute;
+    top: 1%;
+    float: right;
+  }
+  .home-container .nav .nav-logo {
+    color: rgb(255, 48, 91);
+    display: inline-block;
+    top: 5%;
+    left: 2%;
+    position: absolute;
+  }
+  .home-container .nav .nav-links ul li a {
+    font-size: 0.5rem;
+  }
+  /*-----------------------profile---------------------*/
+  .profile-container .profile-about {
+    width: 70%;
+    position: relative;
+    z-index: 1;
+  }
+  .profile-container .profile-description {
+    width: 70%;
+    margin: 2rem 0rem 2rem 2rem;
+  }
+  .profile-container .profile-description ul li {
+    width: 100%;
+  }
+  .profile-container .profile-description .buttons a {
+    display: block;
+  }
+  .profile-container .profile-description .buttons .download-cv-btn {
+    margin-bottom: 0.5rem;
+  }
+  .profile-container .profile-description .buttons .download-cv-btn {
+    margin-right: 0rem;
+  }
+  /*-----------------------Services---------------------*/
+  .service-container {
+    padding: 0rem 0rem;
+  }
+  #our-services .service-items {
+    width: 80%;
+  }
+  #our-services .service-items .item {
+    float: left;
+    width: 100%;
+  }
+
+  #our-services .service-items .item .item-inner {
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+  }
+  /*-----------------------portfolio---------------------*/
+  /*=========portfolio categories=======*/
+
+  #our-portfolio .portfolio-categories {
+    width: 66%;
+    margin: auto;
+  }
+  #our-portfolio .portfolio-categories ul li {
+    padding: 0.2rem 0.3rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /*=========portfolio cards=======*/
+  #our-portfolio .portfolio-cards {
+    margin-left: 1rem;
+    margin: auto;
+    width: 70%;
+  }
+
+  #our-portfolio .portfolio-cards .card {
+    width: 95%;
+    margin: 1rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /*-----------------------achievement---------------------*/
+  #our-achievement .achievement-container .item {
+    width: 50%;
+  }
+
+  /*=========feedback content=======*/
+  #feedback .feedback-container .feedback-content {
+    width: 100%;
+  }
+  #feedback .feedback-container .feedback-content::before {
+    top: -80%;
+    left: -25%;
+  }
+  /*=========feedback content--->  image=======*/
+  #feedback .feedback-container .feedback-content .feedback-image {
+    width: 25%;
+  }
+  /*=========feedback content--->  details=======*/
+  #feedback .feedback-container .feedback-content .feedback-details {
+    width: 75%;
+  }
+
+  /*-----------------------Blog---------------------*/
+  #our-blog {
+    background-color: #f1f1f1;
+    padding: 0rem 0rem;
+    margin-top: 2rem;
+  }
+  #our-blog .blog-container {
+    margin: auto;
+    width: 80%;
+  }
+
+  #our-blog .blog-container .blog-content .blog-item {
+    width: 80%;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  /*------------------ footer -------------------*/
+  #footer .footer-container .social-icons {
+    width: 28%;
+  }
+}
+
+/*TODO ------------------- Extra small screen-----------------------*/
+
+@media screen and (max-width: 600px) {
+  #our-services .service-header h2::before,
+  #our-portfolio .portfolio-header h2::before,
+  #feedback .feedback-container .feedback-header h2::before,
+  #our-blog .blog-container .blog-header h2::before {
+    width: 12%;
+    left: 45%;
+  }
+  #our-services .service-header h2::after,
+  #our-portfolio .portfolio-header h2::after,
+  #feedback .feedback-container .feedback-header h2::after,
+  #our-blog .blog-container .blog-header h2::after {
+    width: 35%;
+    left: 33%;
+  }
+
+  /*-----------------------portfolio---------------------*/
+  /*=========portfolio categories=======*/
+
+  #our-portfolio .portfolio-categories {
+    width: 90%;
+    margin: auto;
+  }
+  #our-portfolio .portfolio-categories ul li {
+    padding: 0.2rem 0.2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
+    font-size: 0.7rem;
+  }
+  /*-----------------------achievement---------------------*/
+  #our-achievement .achievement-container .item {
+    width: 100%;
+  }
+
+  /*=========feedback content=======*/
+  #feedback .feedback-container .feedback-content {
+    width: 100%;
+  }
+  #feedback .feedback-container .feedback-content::before {
+    top: -69%;
+    left: -48%;
+  }
+  /*-----------------------Blog---------------------*/
+  #our-blog {
+    background-color: #f1f1f1;
+    padding: 0rem 0rem;
+    margin-top: 2rem;
+  }
+  #our-blog .blog-container {
+    margin: auto;
+    width: 85%;
+  }
+
+  #our-blog .blog-container .blog-content .blog-item {
+    background-color: white;
+    width: 90%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  /*------------------ footer -------------------*/
+  #footer .footer-container .social-icons {
+    width: 55%;
+  }
+}
